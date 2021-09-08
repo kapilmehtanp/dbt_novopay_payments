@@ -8,7 +8,7 @@ final as (
 
     select
         *
-    from transaction_audit
+    from stg_transaction_audit
 )
 
 select * from final
