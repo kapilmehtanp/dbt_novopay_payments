@@ -1,4 +1,4 @@
-## Testing dbt project: `jaffle_shop`
+## Testing dbt project: `novopay`
 
 `novopay` is a fictional ecommerce store. This dbt project transforms raw data from an app database into a customers and orders model ready for analytics.
 
@@ -19,7 +19,7 @@ This repo contains [seeds](https://docs.getdbt.com/docs/building-a-dbt-project/s
 
 The raw data consists of customers, orders, and payments, with the following entity-relationship diagram:
 
-![Jaffle Shop ERD](/etc/jaffle_shop_erd.png)
+![novopay ERD](/etc/novopay_erd.png)
 
 
 ### Running this project
@@ -28,12 +28,12 @@ To get up and running with this project:
 
 2. Clone this repository.
 
-3. Change into the `jaffle_shop` directory from the command line:
+3. Change into the `novopay` directory from the command line:
 ```bash
-$ cd jaffle_shop
+$ cd novopay
 ```
 
-4. Set up a profile called `jaffle_shop` to connect to a data warehouse by following [these instructions](https://docs.getdbt.com/docs/configure-your-profile). If you have access to a data warehouse, you can use those credentials – we recommend setting your [target schema](https://docs.getdbt.com/docs/configure-your-profile#section-populating-your-profile) to be a new schema (dbt will create the schema for you, as long as you have the right privileges). If you don't have access to an existing data warehouse, you can also setup a local postgres database and connect to it in your profile.
+4. Set up a profile called `novopay` to connect to a data warehouse by following [these instructions](https://docs.getdbt.com/docs/configure-your-profile). If you have access to a data warehouse, you can use those credentials – we recommend setting your [target schema](https://docs.getdbt.com/docs/configure-your-profile#section-populating-your-profile) to be a new schema (dbt will create the schema for you, as long as you have the right privileges). If you don't have access to an existing data warehouse, you can also setup a local postgres database and connect to it in your profile.
 
 5. Ensure your profile is setup correctly from the command line:
 ```bash
@@ -67,8 +67,6 @@ $ dbt docs generate
 $ dbt docs serve
 ```
 
-### What is a jaffle?
-A jaffle is a toasted sandwich with crimped, sealed edges. Invented in Bondi in 1949, the humble jaffle is an Australian classic. The sealed edges allow jaffle-eaters to enjoy liquid fillings inside the sandwich, which reach temperatures close to the core of the earth during cooking. Often consumed at home after a night out, the most classic filling is tinned spaghetti, while my personal favourite is leftover beef stew with melted cheese.
 
 ---
 For more information on dbt:
