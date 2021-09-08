@@ -1,9 +1,9 @@
 version: 2
 
-models:
-  - name: lg_transaction_audit
-    columns:
-      - name: id
-        tests:
-          - unique
-          - not_null
+# models:
+#   - name: lg_transaction_audit
+#     columns:
+#       - name: id
+#         tests:
+#           - unique
+#           - not_null
