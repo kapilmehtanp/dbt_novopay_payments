@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_transaction_audit
+  - name: lg_transaction_audit
     columns:
       - name: id
         tests:
