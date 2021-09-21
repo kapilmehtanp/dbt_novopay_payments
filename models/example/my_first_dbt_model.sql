@@ -10,8 +10,16 @@
 {{ config(materialized='table') }}
 
 with source_data as (
-    select *
-    from t_transaction_audit
+    select id,
+        transaction_type,
+        transaction_sub_type,
+        novopay_reference_code,
+        accounting_reference_code,
+        client_code,
+        client_reference_code,
+        external_reference_code,
+        partner_reference_code,
+        additional_reference_code
 )
 
 select *
