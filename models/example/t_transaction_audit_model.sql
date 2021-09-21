@@ -8,15 +8,9 @@
 */
 {{ config(materialized='table') }}
 
-with t_transaction_audit as (
-    select * from {{ ref('t_transaction_audit') }}
-
-),
-
 
 with source_data as (
-    select * 
-    from t_transaction_audit
+    select id,transaction_type
 )
 
 select *
