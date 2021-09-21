@@ -10,8 +10,9 @@
 
 
 with source_data as (
-    select *
-    from t_transaction_audit
+    select * as id
+    union all
+    select null as id
 )
 
 select *
