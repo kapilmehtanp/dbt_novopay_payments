@@ -6,12 +6,17 @@
 
     Try changing "table" to "view" below
 */
-
 {{ config(materialized='table') }}
 
+with t_transaction_audit as (
+    select * from {{ ref('t_transaction_audit') }}
+
+),
+
+
 with source_data as (
-    select *
-    from  {{ ref('t_transaction_audit') }}
+    select * 
+    from t_transaction_audit
 )
 
 select *
