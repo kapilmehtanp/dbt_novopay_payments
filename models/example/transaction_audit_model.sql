@@ -27,7 +27,7 @@ with es_transaction_audit as (
         additional_reference_code,
         stan
 
-    from dk_payments.transaction_audit
+    from transaction_audit
 
     group by 1
 )
@@ -41,6 +41,6 @@ select
     es_transaction_audit.transaction_type,
     es_transaction_audit.transaction_sub_type
 
-from dk_payments.transaction_audit_additional_data
+from transaction_audit_additional_data
 
 left join es_transaction_audit using (novopay_reference_code)
