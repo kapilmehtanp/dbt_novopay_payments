@@ -11,6 +11,7 @@
 
 with source_data as (
     select *
+    from  {{ ref('t_transaction_audit') }}
 )
 
 select *
