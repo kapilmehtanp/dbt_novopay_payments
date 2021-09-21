@@ -10,7 +10,7 @@
 
 
 with source_data as (
-    select * as id
+    select id 
     union all
     select null as id
 )
