@@ -10,7 +10,7 @@
 
 
 with source_data as (
-    select id,transaction_type
+    select *
 )
 
 select *
