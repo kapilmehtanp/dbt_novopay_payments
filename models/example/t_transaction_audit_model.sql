@@ -11,7 +11,7 @@
 
 with source_data as (
     select *
-    from transaction_audit
+    from t_transaction_audit
 )
 
 select *
