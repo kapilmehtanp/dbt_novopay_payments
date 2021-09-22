@@ -43,4 +43,4 @@ select
 
 from transaction_audit_additional_data
 
-left join es_transaction_audit using (novopay_reference_code)
+left join es_transaction_audit  using (novopay_reference_code)
