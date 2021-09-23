@@ -28,8 +28,6 @@ with es_transaction_audit as (
         stan
 
     from servicebotdb.dk_payments.transaction_audit
-
-    group by 1
 )
 
 
