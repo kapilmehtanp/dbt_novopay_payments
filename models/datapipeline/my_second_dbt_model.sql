@@ -3,4 +3,3 @@
 
 select *
 from {{ ref('transaction_audit_model') }}
-where id = 1
