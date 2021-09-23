@@ -35,4 +35,4 @@ models:
   datapipeline:
     # Applies to all files under models/example/
     datapipeline:
-      materialized: view
+      materialized: table
