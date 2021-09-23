@@ -27,7 +27,7 @@ with es_transaction_audit as (
         additional_reference_code,
         stan
 
-    from transaction_audit
+    from servicebotdb.transaction_audit
 
     group by 1
 )
@@ -41,6 +41,6 @@ select
     es_transaction_audit.transaction_type,
     es_transaction_audit.transaction_sub_type
 
-from transaction_audit_additional_data
+from servicebotdb.transaction_audit_additional_data
 
 left join es_transaction_audit  using (novopay_reference_code)
