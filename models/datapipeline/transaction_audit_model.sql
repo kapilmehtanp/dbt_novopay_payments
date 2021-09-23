@@ -55,7 +55,6 @@ select
     transaction_audit_additional_data.value,
         es_transaction_audit.transaction_type,
         es_transaction_audit.transaction_sub_type,
-        es_transaction_audit.novopay_reference_code,
         es_transaction_audit.accounting_reference_code,
         es_transaction_audit.client_reference_code,
         es_transaction_audit.external_reference_code,
