@@ -27,7 +27,7 @@ with es_transaction_audit as (
         additional_reference_code,
         stan
 
-    from {{ ref('transaction_audit_model') }}
+    from transaction_audit
 
     group by 1
 )
