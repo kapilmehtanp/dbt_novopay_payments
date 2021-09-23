@@ -28,7 +28,7 @@ with es_transaction_audit as (
         customer_identifier_type,
         customer_identifier_value,
         transaction_amount,
-        transaction_charges,,
+        transaction_charges,
         total_amount,
         intial_status,
         status,
@@ -43,8 +43,6 @@ with es_transaction_audit as (
         created_on,
         updated_by,
         updated_on
-
-
     from servicebotdb.dk_payments.transaction_audit
 )
 
@@ -67,7 +65,7 @@ select
         es_transaction_audit.customer_identifier_type,
         es_transaction_audit.customer_identifier_value,
         es_transaction_audit.transaction_amount,
-        es_transaction_audit.transaction_charges,,
+        es_transaction_audit.transaction_charges,
         es_transaction_audit.total_amount,
         es_transaction_audit.intial_status,
         es_transaction_audit.status,
